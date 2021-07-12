@@ -26,8 +26,16 @@ MAP_ADM0_xy <-
   ungroup() 
 
 # plot vignette
-MAP_ADM0_xy %>% 
+plot <-
+  MAP_ADM0_xy %>% 
   ggplot() +
-  geom_sf(aes(geometry = geometry)) 
-  
+  geom_sf(aes(geometry = geometry)) +
+  theme_bw()
+
+# save the plot
+ggsave(here("plot/adm0_country.png"),
+       plot = plot,
+       width = 7,
+       height = 4, 
+       device = "png")
 
