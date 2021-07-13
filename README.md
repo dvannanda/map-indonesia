@@ -21,3 +21,6 @@ Can take a while to run...
 
 ![adm0](plot/adm0_country.png)
 
+#### Province Plot
+
+![adm1](plot/adm1_province.png)
