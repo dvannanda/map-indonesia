@@ -30,4 +30,4 @@ Can take a while to run...
 
 ## License
 
-[CC0-1.0 License](https://github.com/dvannanda/map-indonesia/blob/main/LICENSE)
+[CC0-1.0 License](https://github.com/dvannanda/map-indonesia/blob/main/LICENSE.md)
