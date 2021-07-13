@@ -21,11 +21,7 @@ ID_MAP_ADM3 <-
   ungroup()
 
 # get coordinates
-<<<<<<< HEAD
-MAP_xy <-
-=======
 MAP_ADM3_xy <-
->>>>>>> bd169b68f875ac3815ea54e76fc2392aac599516
   ID_MAP_ADM3 %>% 
   mutate(centroid = map(geometry, ~setNames(st_centroid(.x), c("x", "y")))) %>%
   unnest_wider(centroid)

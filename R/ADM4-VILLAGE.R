@@ -18,11 +18,7 @@ ID_MAP_ADM4 <-
   select(ADM4_EN, geometry)
 
 # get coordinates
-<<<<<<< HEAD
-MAP_xy <-
-=======
 MAP_ADM4_xy <-
->>>>>>> bd169b68f875ac3815ea54e76fc2392aac599516
   ID_MAP_ADM4 %>% 
   mutate(centroid = map(geometry, ~setNames(st_centroid(.x), c("x", "y")))) %>%
   unnest_wider(centroid)

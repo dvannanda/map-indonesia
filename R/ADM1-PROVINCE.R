@@ -29,5 +29,3 @@ MAP_xy <-
   ID_MAP_ADM1 %>% 
   mutate(centroid = map(geometry, ~setNames(st_centroid(.x), c("x", "y")))) %>%
   unnest_wider(centroid)
-
-
