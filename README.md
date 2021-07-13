@@ -16,5 +16,8 @@ Source link for data [here](https://data.humdata.org/dataset/indonesia-administr
 # Show Plot Output
 
 #### Country Plot
+
+Can take a while to run...
+
 ![adm0](plot/adm0_country.png)
 
