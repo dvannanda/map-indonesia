@@ -9,7 +9,7 @@ library(sf)
 
 # get map data
 ID_MAP <- 
-  here("data",
+  here("raw-data",
        "idn_adm_bps_20200401_shp",
        "idn_admbnda_adm0_bps_20200401.shp") %>% 
   st_read()
@@ -25,6 +25,9 @@ MAP_ADM0_xy <-
   unnest_wider(centroid) %>% 
   ungroup() 
 
+# save st object
+st_write(MAP_ADM0_xy, here("data/adm0/adm0.shp"))
+
 # plot vignette
 plot <-
   MAP_ADM0_xy %>% 
@@ -38,7 +41,4 @@ ggsave(here("plot/adm0_country.png"),
        width = 7,
        height = 4, 
        device = "png")
-
-# save st object
-st_write(MAP_xy, here("data/adm0.shp"))
 
