@@ -9,7 +9,7 @@ library(sf)
 
 # get map data
 ID_MAP <- 
-  here("data",
+  here("raw-data",
        "idn_adm_bps_20200401_shp",
        "idn_admbnda_adm0_bps_20200401.shp") %>% 
   st_read()
@@ -24,6 +24,9 @@ MAP_ADM0_xy <-
   mutate(centroid = map(geometry, ~setNames(st_centroid(.x), c("x", "y")))) %>%
   unnest_wider(centroid) %>% 
   ungroup() 
+
+# save st object
+st_write(MAP_ADM0_xy, here("data/adm0/adm0.shp"))
 
 # plot vignette
 plot <-

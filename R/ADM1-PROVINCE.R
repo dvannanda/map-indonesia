@@ -9,7 +9,7 @@ library(sf)
 
 # get map data
 ID_MAP <- 
-  here("data/idn_adm_bps_20200401_shp/idn_admbndp_admALL_bps_itos_20200401.shp") %>% 
+  here("data/idn_adm_bps_20200401_shp/idn_admbnda_adm2_bps_20200401.shp") %>% 
   st_read()
 
 # combine polygons to ADM1
@@ -25,7 +25,7 @@ ID_MAP_ADM1 <-
                           "Dki Jakarta" = "DKI Jakarta"))
 
 # get coordinates
-MAP_ADM1_xy <-
+MAP_xy <-
   ID_MAP_ADM1 %>% 
   mutate(centroid = map(geometry, ~setNames(st_centroid(.x), c("x", "y")))) %>%
   unnest_wider(centroid)
