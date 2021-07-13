@@ -27,3 +27,6 @@ MAP_ADM2_xy <-
   ID_MAP_ADM2 %>% 
   mutate(centroid = map(geometry, ~setNames(st_centroid(.x), c("x", "y")))) %>%
   unnest_wider(centroid)
+
+# save st object
+st_write(MAP_ADM2_xy, here("data/adm2/adm2.shp"))
