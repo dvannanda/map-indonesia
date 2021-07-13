@@ -8,9 +8,9 @@ Boundary polygons shapefile + R codes
 
 Source link for data [here](https://data.humdata.org/dataset/indonesia-administrative-boundary-polygons-lines-and-places-levels-0-4b). 
 
-**Dataset name:** idn_adm_bps_20200401_SHP.zip (470.2M). Updated: 8 April 2020.
+**Dataset name:** `idn_adm_bps_20200401_SHP.zip` (470.2M). Updated: 8 April 2020.
 
-**Data description:** Indonesia administrative level 0 (country - negara), 1 (province - provinsi), 2 (city, district, regency - kota, kabupaten), 3 (sub-district - kecamatan, distrik) and 4 (village - desa, kelurahan, kampung, nagari, pekon or gampong) shapefiles
+**Data description:** Indonesia administrative level 0 (country - negara), 1 (province - provinsi), 2 (city, district, regency - kota, kabupaten), 3 (sub-district - kecamatan, distrik) and 4 (village - desa, kelurahan, kampung, nagari, pekon or gampong) shapefiles.
 
 ## Data
 

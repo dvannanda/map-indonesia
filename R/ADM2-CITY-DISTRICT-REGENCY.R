@@ -9,7 +9,9 @@ library(sf)
 
 # get map data
 ID_MAP <- 
-  here("data/idn_adm_bps_20200401_shp/idn_admbnda_adm2_bps_20200401.shp") %>% 
+  here("raw-data",
+       "idn_adm_bps_20200401_shp",
+       "idn_admbnda_adm2_bps_20200401.shp") %>% 
   st_read() 
   
 # combine polygons to ADM2
